@@ -1,0 +1,18 @@
+{
+  "author": "James Keane <james.keane@gmail.com>",
+  "name": "livetransit",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:jameskeane/livetransit.git"
+  },
+  "dependencies": {
+    "zappa": "0.3.3",
+    "xml-stream": "0.4.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
