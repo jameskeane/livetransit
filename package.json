@@ -7,7 +7,7 @@
     "url": "git@bitbucket.org:jameskeane/livetransit.git"
   },
   "dependencies": {
-    "zappa": "0.3.3",
+    "zappajs": "0.4.2",
     "xml-stream": "0.4.1"
   },
   "devDependencies": {},

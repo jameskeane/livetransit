@@ -1,4 +1,4 @@
-require('zappa') (zappa) ->
+require('zappajs').run parseInt(process.env.PORT or 5000), (zappa) ->
     @enable 'default layout'
     @use static: __dirname + '/public'
     
