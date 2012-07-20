@@ -1,5 +1,4 @@
 require('zappajs').run parseInt(process.env.PORT or 5000), (zappa) ->
-    @enable 'default layout'
     @use static: __dirname + '/public'
     
     http = require 'http'
@@ -34,7 +33,7 @@ require('zappajs').run parseInt(process.env.PORT or 5000), (zappa) ->
     startService()
 
     # Handle the root entry point
-    @get '/': -> @render 'index'
+    @get '/': -> @render 'index', layout: false
 
     # Client side application logic
     @client '/app.js': ->

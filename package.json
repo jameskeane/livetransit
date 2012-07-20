@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "coffee-script": "1.3.3",
-    "zappajs": "0.4.2",
+    "zappajs": "0.3.10",
     "xml-stream": "0.4.1"
   },
   "devDependencies": {},
