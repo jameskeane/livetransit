@@ -136,8 +136,12 @@ require('zappajs').run parseInt(process.env.PORT or 5000), (zappa) ->
             body style:'width:100%; height:100%; margin:0;padding:0;', ->
                 img id:'vehicle-marker', src:'/images/vehicle-marker.png', style:'display:none;'
                 div id:'map', style:'height: 100%'
-    
+
                 script src:'/leaflet.js'
                 script src:'/vehicle.map.js'
                 script src:'/app.js'
-
+                div style: 'position: absolute; top: 0; right: 0; border: 0;', ->
+                    a href: 'https://github.com/jameskeane/livetransit', ->
+                        img
+                            src: 'https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png',
+                            alt: 'Fork me on GitHub'
