@@ -5,6 +5,10 @@ require('zappajs').run parseInt(process.env.PORT or 5000), (zappa) ->
     xmlstream = require 'xml-stream'
     delay = (func) -> setTimeout func, 5000
 
+    @io.configure =>
+        @io.set "transports", ["xhr-polling"]
+        @io.set "polling duration", 10
+
     queryVehicles = (agency, lastEpochUpdate) ->
         http.get
             host: 'webservices.nextbus.com'
